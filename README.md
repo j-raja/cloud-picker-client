@@ -21,4 +21,5 @@ Required installations: Node & Typescript
 
 ## Contributions
 https://www.youtube.com/watch?v=3_f5ssj-pm8
+
 https://levelup.gitconnected.com/typescript-make-a-front-end-with-react-in-10-minutes-94f034200b5b
