@@ -12,12 +12,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Install dependecies using "npm install"
+
+then
+
 ### `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Required installations: Node & Typescript
+Required installations:
+
+Typescript (pref 4.x) Node (pref 16.x) Npm (pref 8.x)
 
 ## Contributions
 https://www.youtube.com/watch?v=3_f5ssj-pm8
