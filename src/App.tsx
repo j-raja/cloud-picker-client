@@ -50,7 +50,7 @@ function App() {
   // Initialize app by getting the list of clouds
   React.useEffect(() => {
     axios
-      .get<Cloud[]>('http://localhost:80/clouds', {
+      .get<Cloud[]>('http://localhost:3001/clouds', {
         headers: {
           "Content-Type": "application/json"
         },
