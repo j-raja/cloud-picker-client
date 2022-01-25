@@ -50,13 +50,19 @@ function App() {
   // Initialize app by getting the list of clouds
   React.useEffect(() => {
     axios
-      .get<Cloud[]>('http://localhost:3001/clouds', {
+      .get<Cloud[]>('http://localhost:8080/clouds', {
         headers: {
           "Content-Type": "application/json"
         },
       })
       .then((response: AxiosResponse) => {
-        sortByDistance(response.data.clouds).then(sortedList => {
+        // Make sure both kind of backend data works
+        let data = response.data;
+        if (response.data.clouds) {
+          data = response.data.clouds
+        }
+
+        sortByDistance(data).then(sortedList => {
           setResponse(sortedList);
           setFiltered(sortedList);
           setLoading(false);
